@@ -25,7 +25,7 @@ fact:
 	movl	-4(%rbp), %eax
 	subl	$1, %eax
 	movl	%eax, %edi
-	call	fact
+	call	fact ; рекурсивный вызов fact
 	imull	-4(%rbp), %eax
 .L3:
 	leave
